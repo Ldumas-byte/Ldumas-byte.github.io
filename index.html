@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <head>
         <meta charset="UTF-8">
        <title>Lamarr Dumas</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav>
-            <ul>
+        <header>
+            <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu<a></a>
+            <nav>
+              <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
+              </ul>
+            </nav>
+        </header>
+                
         <h1>Lamarr Dumas</h1>
-        <p>
-            Hello, I'm Lamarr Dumas.
+        <main>
+            <h1>Hello,...</h1>
+        </main>
+        <p
+            style="color: red;">Hello, I'm Lamarr Dumas. 
             <img style="border-radius: 50%; float: right; margin-right: 1em;" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
         </p>
+        <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>
     </body>
 </html>
+
